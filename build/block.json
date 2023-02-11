@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "rrze/ics-block",
+  "version": "0.1.0",
+  "title": "ICS Block",
+  "category": "embed",
+  "icon": "calendar",
+  "description": "A Block to output ics feeds",
+  "attributes": {
+    "message": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "ics-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

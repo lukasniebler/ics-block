@@ -1,0 +1,17 @@
+{
+    "name": "lukasniebler/ics-block",
+    "autoload": {
+        "psr-4": {
+            "Lukasniebler\\IcsBlock\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lukasniebler",
+            "email": "lukas.niebler@fau.de"
+        }
+    ],
+    "require": {
+        "eluceo/ical": "^2.11"
+    }
+}
