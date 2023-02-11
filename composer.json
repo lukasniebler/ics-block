@@ -12,6 +12,7 @@
         }
     ],
     "require": {
-        "eluceo/ical": "^2.11"
+        "eluceo/ical": "^2.11",
+        "johngrogg/ics-parser": "^3.2"
     }
 }
