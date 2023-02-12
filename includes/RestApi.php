@@ -22,7 +22,12 @@ class RestApi
 
     public function passToRest()
     {
-        $IcsP = new IcsProcessor('http://groupware.fau.de/owa/calendar/RRZE_RS_Events@exch.fau.de/Kalender/calendar.ics');
+        $plugins_url = plugins_url();
+        $ics_file_url = $plugins_url . '/ics-block/test.ics';
+        error_log("Remember to remove L27 in RestAPI. Test ICS file url: " . $ics_file_url);
+        $IcsP = new IcsProcessor($ics_file_url);
+
+        //$IcsP = new IcsProcessor('../test.ics');
         $icsData = $IcsP->getIcsData();
 
         return rest_ensure_response($icsData);
